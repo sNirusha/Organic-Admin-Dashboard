@@ -1,0 +1,98 @@
+.list-table-format{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+
+.list-table-format .title{
+    background-color: #f9f9f9;
+}
+
+.list-table-format img{
+    width: 50px;
+}
+
+@media (max-width:800px) {
+    .list-table-format{
+        grid-template-columns:2fr;
+        gap: 5px;
+    }
+    .list-table-format .title{
+        display: none;
+    }
+}
+/* Modal styles */
+.modal {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker dim background */
+  }
+  
+  .modal-content {
+    background: linear-gradient(135deg, #ffedeb, #fffffa); /* Vibrant gradient background */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #000000; /* Border matches the gradient */
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(3, 3, 3, 0.3); /* Deeper shadow for more depth */
+    border-radius: 12px; /* Increased rounding for a modern look */
+    color: #0c0b0b; /* White text for contrast */
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Button styles */
+  button {
+    margin: 10px;
+    padding: 12px 18px;
+    cursor: pointer;
+    background-color: #48e704; /* Vibrant green button */
+    color: #0c0909;
+    border: none;
+    border-radius: 10px; /* Softer button edges */
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  button:hover {
+    background-color: #2ecc71; /* Even more vibrant hover color */
+    transform: scale(1.05); /* Slightly grow on hover for interaction effect */
+  }
+  
+  /* Close button for modal */
+  button.close {
+    background-color: #e74c3c; /* Bright red for the close button */
+  }
+  
+  button.close:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* Input field styles inside the modal */
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  input:focus {
+    border-color: #48e704; /* Green border on focus */
+    outline: none;
+  }
+  
+  
